@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">lucams</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu container" role="navigation" aria-label="Menú principal">
+            <a href="#" class="logo">
+                <img src="imagenes/img-1.png" alt="Logo de Lucams" class="logo-img" id="logo-img-header">
+            </a>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-label">
+                <img src="imagenes/menu.png" class="menu-icon" alt="Icono del menú" id="menu-icon-img">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#arreglos" id="nav-arreglos">Arreglos</a></li>
+                    <li><a href="#uniformes" id="nav-uniformes">Uniformes</a></li>
+                    <li><a href="#contacto" id="contact-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <label for="lang-select" id="lang-select-label">Idioma: </label>
+                <select id="lang-select">
+                    <option value="es" selected>Español</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="content">
+                <h1 id="welcome-message">Bienvenidos</h1>
+                <p id="header-subtitle">Confecciones Lucams les ofrece</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="image-slider-container container">
+        <h2 id="slider-title">Nuestros Productos Destacados</h2>
+        <div class="image-slider">
+            <div class="slide active">
+                <img src="imagenes/slider1.jpg" alt="Producto destacado 1" id="slider-img-1">
+                <div class="slide-caption" id="caption-product-1">Buso deportivo</div>
+            </div>
+            <div class="slide">
+                <img src="imagenes/slider2.jpg" alt="Producto destacado 2" id="slider-img-2">
+                <div class="slide-caption" id="caption-product-2">jardinera</div>
+            </div>
+            <div class="slide">
+                <img src="imagenes/slider3.jpg" alt="Producto destacado 3" id="slider-img-3">
+                <div class="slide-caption" id="caption-product-3">Chaqueta escolar</div>
+            </div>
+            <button class="slider-nav prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="slider-nav next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <main id="services" class="services container">
+        <div class="service">
+            <img src="imagenes/icono1.png" class="icon1" alt="Icono de arreglos" id="service1-icon-img">
+            <h3 id="service1-title">Arreglos</h3>
+            <p id="service1-desc">Se hacen y se arreglan cualquier tipo de prendas</p>
+            <a href="#arreglos" class="btn-1" id="service1-btn">Ver más</a>
+        </div>
+        <div class="service">
+            <img src="imagenes/icono2.png" class="icon1" alt="Icono de uniformes" id="service2-icon-img">
+            <h3 id="service2-title">Uniformes</h3>
+            <p id="service2-desc">Les ofrecemos uniformes de distintas instituciones por tallaje o a la medida</p>
+            <a href="#uniformes" class="btn-1" id="service2-btn">Ver más</a>
+        </div>
+        <div class="service">
+            <img src="imagenes/icono3.png" class="icon1" alt="Icono de contacto" id="service3-icon-img">
+            <h3 id="service3-title">Contacto</h3>
+            <p id="service3-desc">Puedes contactarnos</p>
+            <a href="#contacto" class="btn-1" id="service3-btn">Ver más</a>
+        </div>
+    </main>
+
+    <section id="portfolios" class="portfolios container" aria-label="Información de servicios">
+        <h2 id="info-section-title">Información</h2>
+
+        <div id="arreglos" class="portfolio-item">
+            <img src="imagenes/arreglos.jpg" alt="Persona trabajando en arreglos de ropa" id="portfolio1-img">
+            <div class="portfolio-content">
+                <h3 id="portfolio1-title">Arreglos</h3>
+                <p id="portfolio1-desc">Realizamos todo tipo de arreglos en prendas de vestir, ajustes de talla, cambios de cierre y más. Trae tus prendas y les daremos una nueva vida.</p>
+                <a href="#services" class="btn-2" id="portfolio1-btn">Volver</a>
+            </div>
+        </div>
+
+        <div id="uniformes" class="portfolio-item reverse">
+            <img src="imagenes/uniformes.jpg" alt="Uniformes escolares exhibidos" id="portfolio2-img">
+            <div class="portfolio-content">
+                <h3 id="portfolio2-title">Uniformes</h3>
+                <p id="portfolio2-desc">Les ofrecemos chaquetas, blazers, jardineras, busos, camisas, camisetas, pantalones, pantalonetas, medias, calzado de cualquier talla. Confección a medida y por tallaje industrial.</p>
+                <a href="#services" class="btn-2" id="portfolio2-btn">Volver</a>
+            </div>
+        </div>
+
+        <div id="contacto" class="portfolio-item">
+            <img src="imagenes/contacto.jpg" alt="Imagen ilustrativa de contacto" id="portfolio3-img">
+            <div class="portfolio-content">
+                <h3 id="portfolio3-title">Contáctenos</h3>
+                <p><span id="portfolio3-phone-label">Teléfono:</span> <a href="tel:3133355466">3133355466</a></p>
+                <p><span id="portfolio3-email-label">Correo:</span> <a href="mailto:davidlucam30@gmail.com">davidlucam30@gmail.com</a></p>
+                <p><span id="portfolio3-address-label">Dirección:</span> Cr5 # 8-24</p>
+                <a href="#services" class="btn-2" id="portfolio3-btn">Volver</a>
+            </div>
+        </div>
+    </section>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <hr>
+            <div class="info">
+                <div class="footer-links">
+                    <img src="imagenes/img-1.png" alt="Logo de Lucams" class="logo-img" id="logo-img-footer">
+                    <div class="enlace">
+                        <ul>
+                            <li><a href="#arreglos" id="footer-nav-arreglos">Arreglos</a></li>
+                            <li><a href="#uniformes" id="footer-nav-uniformes">Uniformes</a></li>
+                            <li><a href="#contacto" id="footer-nav-contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
